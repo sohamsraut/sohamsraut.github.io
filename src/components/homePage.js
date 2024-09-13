@@ -9,7 +9,7 @@ export default function homePageComponent({width}) {
             <p className="text-lg">Hello there, I'm</p>
             <p className="heading lg:text-7xl sm:text-6xl text-5xl mt-3 font-bold">Soham Raut</p>
             <p className="md:mt-5 mt-3 md:mx-20 mx-10 tmd:ext-base lg:text-xl text-sm text-center 2xl:mx-40">
-              I'm a Junior studying <span className="font-semibold">Computer Science</span> at the University of Washington in Seattle.
+              I'm a Senior studying <span className="font-semibold">Computer Science</span> at the University of Washington in Seattle.
               Apart form technology and science, I love reading, swimming, and sports.
               I am passionate about building software that helps improve the world!
             </p>
