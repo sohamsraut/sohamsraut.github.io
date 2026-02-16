@@ -6,7 +6,9 @@ export default function Document() {
       <Head>
         <meta charSet="utf-8" />
         <link rel="icon" type="image/x-icon" href="./favicon.png" />
-        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;800&family=Open+Sans:wght@400;700&family=Poppins:wght@400;800&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Convergence&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
       </Head>
       <body>
         <Main />

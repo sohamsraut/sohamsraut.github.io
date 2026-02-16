@@ -1,54 +1,109 @@
-export default function experienceSection() {
+export default function ExperienceSection() {
+  const experiences = [
+    {
+      company: "Paul G. Allen School of Computer Science",
+      role: "Teaching Assistant",
+      location: "Seattle, WA",
+      period: "January 2026 - Present",
+      description: "Teaching OS internals to 100+ students and leading 30-person sections. Helping future devs understand why their kernel panics... and how to fix them.",
+      skills: ["Operating Systems", "C", "Teaching", "Debugging"],
+      image: "./allen.png",
+      current: true
+    },
+    {
+      company: "UW Interactive Data Lab",
+      role: "Research Assistant",
+      location: "Seattle, WA",
+      period: "January 2023 - Present",
+      description: "Built pipelines to turn complex D3.js visualizations into modular code. Also wrote an honors thesis on auto-generating tutorials that cut learning time by 60%.",
+      skills: ["D3.js", "JavaScript", "Python", "JestJS"],
+      image: "./allen.png",
+      current: true
+    },
+    {
+      company: "Candent Technologies Pvt. Ltd.",
+      role: "Software Engineer Intern",
+      location: "Pune, India",
+      period: "July 2023 - September 2023",
+      description: "Increased candidate evaluation accuracy by 35% with a weighted ranking algorithm. Also built a scheduling platform that cut coordination time by 25%.",
+      skills: ["Next.js", "MongoDB", "Python", "Agile"],
+      image: "./candent.jpg",
+      current: false
+    }
+  ];
+
   return (
-    <section id="experience" className="w-full z-10 bg-[#111]/[.95] flex flex-col justify-center md:p-5 pt-10">
-      <div className="relative my-5">
-        <h1 className="text-4xl heading font-semibold text-center">Experience</h1>
-        <p className="w-full text-center heading2 cla">Experience</p>
+    <section id="experience" className="section bg-dark relative overflow-hidden">
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="text-center mb-16">
+          <p className="text-accent text-sm mb-2 tracking-[0.2em] font-mono">// experience</p>
+          <h2 className="section-title font-display">
+            Work <span className="text-accent">History</span>
+          </h2>
+          <p className="section-subtitle mx-auto text-gray-400">
+            places that trusted me with their codebase (trust me with more, please?)
+          </p>
+        </div>
+
+        <div className="max-w-4xl mx-auto space-y-6">
+          {experiences.map((exp, index) => (
+            <div
+              key={index}
+              className="group p-6 md:p-8 bg-gray-900/30 border border-gray-800/50 rounded-2xl hover:border-accent/30 transition-all duration-300 relative overflow-hidden"
+            >
+              {/* Glow effect */}
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+
+              <div className="relative z-10 flex flex-col md:flex-row gap-6">
+                {/* Company Logo */}
+                <div className="flex-shrink-0">
+                  <img
+                    src={exp.image}
+                    alt={exp.company}
+                    className="w-16 h-16 md:w-20 md:h-20 rounded-lg object-cover border border-gray-700"
+                  />
+                </div>
+
+                {/* Content */}
+                <div className="flex-1">
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-3">
+                    <div>
+                      <div className="flex items-center gap-2">
+                        <h3 className="text-xl font-display text-white group-hover:text-accent transition-colors">{exp.role}</h3>
+                        {exp.current && (
+                          <span className="px-2 py-0.5 bg-green-500/10 border border-green-500/30 text-green-400 text-xs rounded flex items-center gap-1">
+                            <span className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></span>
+                            Active
+                          </span>
+                        )}
+                      </div>
+                      <p className="text-secondary">{exp.company}</p>
+                    </div>
+                    <div className="text-right">
+                      <p className="text-gray-500 text-sm">{exp.period}</p>
+                      <p className="text-gray-600 text-sm">{exp.location}</p>
+                    </div>
+                  </div>
+
+                  <p className="text-gray-400 mb-4 leading-relaxed">{exp.description}</p>
+
+                  <div className="flex flex-wrap gap-2">
+                    {exp.skills.map((skill, idx) => (
+                      <span key={idx} className="text-xs px-3 py-1 bg-gray-800/80 border border-gray-700 text-gray-300 rounded">
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Cyber corners */}
+              <div className="absolute top-0 right-0 w-8 h-8 border-t border-r border-accent/30 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="absolute bottom-0 left-0 w-8 h-8 border-b border-l border-secondary/30 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </div>
+          ))}
+        </div>
       </div>
-      <ol className="relative border-l border-[#ffb400] flex flex-col mx-auto my-10">
-      <li className="mb-10 ml-6 rounded-md hover:shadow-md hover:bg-[#1b1b1b]">
-            <span className="absolute flex items-center justify-center w-6 h-6 rounded-full -left-3 ring-4 ring-[#ffb400] bg-[#111]">
-            </span>
-            <div className="flex items-center ">
-              <img src="./allen.png" className="h-[100px] ms-3 me-7"/>
-              <div>
-                <h3 className="flex items-center text-lg font-semibold">Paul G. Allen School of Computer Science and Engineering </h3>
-                <h3 className="flex items-center mb-1 text-base italic">Undergraduate Researcher</h3>
-                <time className="block mb-1 font-normal leading-none para">January 2023 - Present</time>
-                <p className=" text-base para mb-2 font-normal">Seattle, WA</p>
-                <p className="text-base mb-4 font-normal max-w-[630px]">Project: Automatically Decomposing D3 Visualizations, automating the process of creating reusable components to modularise D3 code for an easier coding experience, under the guidance of Prof. Leilani Battle.</p>
-              </div>
-            </div>
-          </li>
-          <li className="mb-10 ml-6 rounded-md hover:shadow-md hover:bg-[#1b1b1b]">
-            <span className="absolute flex items-center justify-center w-6 h-6 rounded-full -left-3 ring-4 ring-[#ffb400] bg-[#111]">
-            </span>
-            <div className="flex items-center ">
-              <img src="./candent.jpg" className="h-[100px] ms-3 me-7"/>
-              <div>
-                <h3 className="flex items-center text-lg font-semibold">Candent Technologies Pvt. Ltd. </h3>
-                <h3 className="flex items-center mb-1 text-base italic">Software Engineer Intern</h3>
-                <time className="block mb-1 font-normal leading-none para">July 2023 - September 2023</time>
-                <p className=" text-base para mb-2 font-normal">Pune, India</p>
-                <p className="text-base mb-4 font-normal max-w-[630px]">Worked with a team of skilled developers on a full-stack application in a scrum-based environment using Next.js, MongoDB, and Google APIs.</p>
-              </div>
-            </div>
-          </li>
-          <li className="ml-6 rounded-md hover:shadow-md hover:bg-[#1b1b1b]">
-            <span className="absolute flex items-center justify-center w-6 h-6 rounded-full -left-3 ring-4 ring-[#ffb400] bg-[#111]">
-            </span>
-            <div className="flex items-center">
-              <img src="./hyperloop.jpg" className="h-[100px] ms-3 me-7"/>
-              <div>
-                <h3 className="flex items-center text-lg font-semibold">Washington Hyperloop</h3>
-                <h3 className="flex items-center mb-1 text-base italic">Controls Team Member</h3>
-                <time className="block mb-1 font-normal leading-none para">November 2022 - January 2024</time>
-                <p className=" text-base para mb-2 font-normal">Seattle, WA</p>
-                <p className="text-base font-normal max-w-[630px] mb-4">Worked with a team of engineers and developers to craft a robotic navigation system for a Tunnel Boring Machine built for the Not-A-Boring Competition</p>
-              </div>
-            </div>
-          </li>
-      </ol>
     </section>
-  )
+  );
 }

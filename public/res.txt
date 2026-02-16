@@ -1,0 +1,51 @@
+Soham Raut
+206-532-6226 | sohamsraut97@gmail.com | linkedin.com/in/sohamsraut | github.com/sohamsraut
+Education
+University of Washington - Seattle Expected Graduation: Dec. 2026
+M.S. in Computer Science Seattle, WA
+• GPA: 3.95/4.0 Admitted to the Allen School BS/MS program starting from Fall 2025.
+University of Washington - Seattle Sep. 2021 – Jun. 2025
+B.S. in Computer Science (Departmental Honors), Minor in Applied Mathematics Seattle, WA
+• GPA: 3.91/4.0, Cum Laude, Honors Thesis on Generating and Evaluating Intent-Driven D3 Tutorials
+Relevant Courses: Operating Systems, Compilers, Data Structures and Algorithms, Advanced AI/ML, NLP,
+Computer Vision, Distributed Systems, Databases, Software Design and Implementation, Security, Networks
+Experience
+Teaching Assistant Jan. 2026 – Present
+Paul G. Allen School of Computer Science and Engineering Seattle, WA
+• Taught OS internals to 100+ students and led 30-person sections, covering system calls, virtualization, concurrency,
+and C, resulting in successful completion of kernel-level labs.
+• Mentored students on debugging low-level C kernel code, resolving race conditions, syscall bugs, and memory faults,
+improving correctness and concurrency safety.
+Research Assistant Jan. 2023 – Present
+UW Interactive Data Lab Seattle, WA
+• Built pipelines in JavaScript and Python to convert complex D3.js visualizations into reusable modular code
+components to facilitate the creation of customizable visualizations by beginners based on existing examples.
+• Improved reusability and reliability of the component extraction model by generalizing it across diverse chart types
+and achieving more than 90% code coverage using JestJS unit tests along with invariant-based validation.
+• Proposed a framework to measure D3.js tutorial effectiveness and developed a system to auto-generate intuitive
+intent-driven tutorials using Python, cutting learning time by 60% and improving D3 adoption rates by 40%.
+Software Engineering Intern Jul. 2023 – Sep. 2023
+Candent Technologies Pvt. Ltd. Pune, India
+• Increased candidate evaluation accuracy by 35% by building a weighted ranking algorithm focusing on skills,
+experience, and project impact for multiple job types using Python and MongoDB for the internal hiring platform.
+• Reduced event coordination time by 25% by developing a multi-role scalable collaborative scheduling platform
+using Next.js in an Agile team, streamlining cross-department workflows.
+Projects
+Spot | Multi-Cloud Cost and Resource Optimizer with Auto-Deployment, DubHacks NEXT Batch 3 Apr. 2024
+• Lowered deployment costs by up to 50% by building an AI-driven infrastructure recommender that translated
+high-level user queries into optimal configurations using JavaScript, Python, Terraform, and the OpenAI API.
+• Cut setup and onboarding time for beginners by more than 70% and increased cloud usage and adoption in new
+developers by 10%, by building a unified deployment interface compatible with AWS, GCP, and Azure.
+LLM Grammar: Beyond Language Barriers | LLM Research Project March 2024
+• Evaluated cross-lingual grammatical understanding in LLMs by training and fine-tuning mT5 on 100K+ examples,
+running controlled experiments to measure translation quality.
+ThriftEats | Budget-Aware Recipe Recommender, DubHacks ’22 Most Commercially Viable Jan. 2023
+• Saved student users up to 30% in grocery costs by building a recipe recommender that matches ingredients to
+coupons and discounts via real-time coupon data from the Spoonacular API.
+• Designed a responsive frontend in Figma and implemented backend logic in JavaScript to score nutritional recipes
+with the maximum cost-saving opportunities.
+Technical Skills
+Languages: C/C++, Python, Java, JavaScript, TypeScript, SQL, Bash, R, MATLAB
+Frameworks: Express.js, Node.js, React, Next.js, D3.js, Terraform, JUnit, JestJS
+Developer Tools: Linux/Ubuntu, Git, QEMU, REST API, Figma, Arduino, AWS, Microsoft Azure, GCP, MongoDB
+Libraries: pandas, NumPy, PyTorch, TensorFlow, Scikit-Learn, OpenCV, HuggingFace
